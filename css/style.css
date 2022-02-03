@@ -1,0 +1,1209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100%;
+    background: #5ABCA9;    
+}
+
+header img {
+    margin-top: 20px;
+    margin-left: 123px; 
+}
+
+body  {
+    font-family: 'Arial' , sans-serif;
+}
+nav {
+    height: 100px;
+    width: 100%;
+    background: #5ABCA9;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+nav ul {
+    width: 50%;
+    background:none;
+    display: flex;
+    list-style: none;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header nav ul img {
+    float: left; 
+}
+
+header nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    font-family: Hoss Round;
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 30px;
+    text-decoration: none; 
+    color: #FFFFFF; 
+}
+
+
+header nav ul button {
+    width: 200px;
+    height: 50px;
+    background: #F0143E;
+    border: none;
+    border-radius: 10px; 
+    font-family: Hoss Round;
+    font-weight: medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+
+
+
+
+header nav ul button:hover{
+    background: #FFFFFF;
+    color: #F0143E;
+    cursor:pointer;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav ul .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+div {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: block;
+    margin-top: 30px;
+}
+
+
+
+
+
+@media(max-width: 800px){
+    nav ul {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 255, 255);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+
+    nav ul li a{
+        background: none;
+        color: #5ABCA9;;
+        font-size: 1.6rem;
+        padding: 10px;
+        
+    }
+    nav ul li a:hover {
+        background: none;
+        color: #5A9ABC;
+        font-size: 1.6rem;
+        border: 1px solid #5ABCA9;
+        padding: 10px;
+
+    }
+
+    header nav ul button{
+        background: #5ABCA9;
+    }
+}
+
+
+
+body #homepage {
+    width: 100%;
+    height: 90vh;
+    background: #5ABCA9;
+    border: none; 
+    margin: 0 auto;
+}
+
+#homepage article {
+    width: calcul(50%/2);
+    height: 300px;
+    float: left; 
+    background: lightskyblue;
+}
+
+#homepage article h2 {
+    text-decoration: none;
+    font-family: Hoss Round;
+    font-weight: bold;
+    font-size: 36px;
+    color: white; 
+}
+
+#homepage article h3 {
+    text-decoration: none;
+    font-family: Hoss Round;
+    font-size: 36px;
+    font-weight: normal;
+    color: white; 
+}
+
+#homepage article p {
+    text-decoration: none;
+    font-family: Hoss Round;
+    font-size: 20px;
+    font-weight: normal;
+    color: white; 
+}
+
+#homepage article button {
+    width: 200px;
+    height: 50px;
+    background: #F0143E;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer; 
+    font-family: Hoss Round;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#homepage article button:hover {
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    color: red;
+    cursor: pointer; 
+    font-family: Hoss Round;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+#homepage article:nth-child(odd) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; 
+    padding-left: 30px;
+}
+  #homepage article:nth-child(even) {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; 
+}
+
+#homepage article:nth-child(even) img {
+    width: 90%; 
+}
+
+
+  
+
+body #missions {
+    width: 100%;
+    height: 50vh;
+    background: url(../img/rectvert.png);
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#trait_missions{
+    max-width: 40%;
+}
+
+#missions h4 {
+    font-family: Omnes;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px; 
+}
+
+#missions #mission {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+  #missions article {
+    border-radius: 20px;
+    width: 430px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    background: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 2px 5px 5px gray;
+    float: left; 
+    margin: 10px;
+}
+#missions article h5 {
+    text-decoration: none;
+    font-family: Omnes;
+    font-weight: bold;
+    font-size: 25px;
+    color: #F0143E;
+    text-decoration: none; 
+}
+
+#missions article p {
+    text-decoration: none;
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+    text-align: left;
+    text-decoration: none;
+    width: 80%; 
+}
+
+body #fonctionnement {
+    width: 90%;
+    height: 170vh;
+    background: none;
+    margin: 0 auto;
+    margin-top: 70px; 
+
+}
+
+#trait_fonctionnement{
+    max-width: 60%;
+}
+
+          #fonctionnement .f1{
+              width: 100%;
+              
+              background-color: none
+              ;
+              float: left;
+              display: flex;
+              justify-content: space-around;
+          }
+
+          #fonctionnement .f1 #choice_text{
+            width: 60%;
+            background-color: none;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        #fonctionnement .f1 #choice_text h4{
+            font-family: Omnes;
+            font-size: 40px;
+            font-weight: bold;
+            color: #F0143E;
+            float: left;
+        }
+
+        #fonctionnement .f1 #choice_text img{
+            
+            float: left;
+            
+        }
+
+        #fonctionnement .f1 #choice_text div{
+            
+            width: 100%;
+            height: 30vh;
+            background: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+
+        #fonctionnement .f1 #choice_text div img{
+            
+            
+            margin-left: 30px;
+        }
+
+        #fonctionnement .f1 #choice_text div aside{
+            width: 100%;
+            background: none;
+            margin-left:40px ;
+        }
+
+        #fonctionnement .f1 #choice_text div aside #text1{
+            font-family: Hoss Round;
+            font-size: 25px;
+            font-weight: lighter;
+            color: #5ABCA9;
+            background: none;
+            margin-left:40px ;
+            margin-top: 30px;
+        }
+
+        #fonctionnement .f1 #choice_text div aside #text2{
+            font-family: Hoss Round;
+            font-size: 16px;
+            font-weight: lighter;
+            color: #464646;
+            background: none;
+            margin-left:40px ;
+            width: 100%;
+            line-height: 30px;
+        }
+        
+
+        #fonctionnement .f1 #choice_text h1{
+            font-family: Hoss Round;
+            font-size: 181px;
+            font-weight: medium;
+            margin-left: 30px;
+            color: #5ABCA9;  
+        }
+
+        #fonctionnement .f1 #choice_picture{
+            width: 50%;
+            height: 60vh;
+            background-color: none;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        #fonctionnement .f1 #choice_picture img{
+            max-width: 70%;
+            margin: 0 auto;
+           
+        }
+
+        #fonctionnement #f2{
+            width: 100%;
+            
+            background-color: none;
+            float: left;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #fonctionnement #f2 #choice_text{
+          width: 60%;
+          background-color: none;
+          float: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+
+      #fonctionnement #f2 #choice_text h4{
+          font-family: Omnes;
+          font-size: 40px;
+          font-weight: bold;
+          color: #F0143E;
+          float: left;
+      }
+
+      #fonctionnement #f2 #choice_text img{
+          
+          float: left;
+          
+      }
+
+      #fonctionnement #f2 #choice_text div{
+          
+          width: 100%;
+          height: 100%;
+          background: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+      }
+
+      #fonctionnement #f2 #choice_text div img{
+          
+          
+          margin-left: 30px;
+      }
+
+      #fonctionnement #f2 #choice_text div aside{
+          width: 100%;
+          background: none;
+          margin-left:40px ;
+      }
+
+      #fonctionnement #f2 #choice_text div aside #text1{
+          font-family: Hoss Round;
+          font-size: 25px;
+          font-weight: lighter;
+          color: #5ABCA9;
+          background: none;
+          margin-left:40px ;
+          margin-top: 30px;
+      }
+
+      #fonctionnement #f2 #choice_text div aside #text2{
+          font-family: Hoss Round;
+          font-size: 16px;
+          font-weight: lighter;
+          color: #464646;
+          background: none;
+          margin-left:40px ;
+          width: 100%;
+          line-height: 30px;
+          
+      }
+      
+
+      #fonctionnement #f2 #choice_text h1{
+          font-family: Hoss Round;
+          font-size: 181px;
+          font-weight: medium;
+          margin-left: 30px;
+          color: #5ABCA9;  
+      }
+
+      #fonctionnement #f2 #choice_picture{
+          width: 30%;
+          height: 60vh;
+          background-color: none;
+          float: left;
+          display: flex;
+          align-items: center;
+      }
+
+      #fonctionnement #f2 #choice_picture img{
+          max-width: 100%;
+          margin: 0 auto;
+         
+      }
+    
+              #fonctionnement .f3{
+                  width: 100%;
+                  
+                  background-color: none
+                  ;
+                  float: left;
+                  display: flex;
+                  justify-content: space-around;
+              }
+    
+              #fonctionnement .f3 #choice_text{
+                width: 60%;
+                background-color: none;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+    
+            #fonctionnement .f3 #choice_text h4{
+                font-family: Omnes;
+                font-size: 40px;
+                font-weight: bold;
+                color: #F0143E;
+                float: left;
+            }
+    
+            #fonctionnement .f3 #choice_text img{
+                
+                float: left;
+                
+            }
+    
+            #fonctionnement .f3 #choice_text div{
+                
+                width: 100%;
+                height: 100%;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            #fonctionnement .f3 #choice_text div img{
+                
+                
+                margin-left: 30px;
+            }
+    
+            #fonctionnement .f3 #choice_text div aside{
+                width: 100%;
+                background: none;
+                margin-left:40px ;
+            }
+    
+            #fonctionnement .f3 #choice_text div aside #text1{
+                font-family: Hoss Round;
+                font-size: 25px;
+                font-weight: lighter;
+                color: #5ABCA9;
+                background: none;
+                margin-left:40px ;
+                margin-top: 30px;
+            }
+    
+            #fonctionnement .f3 #choice_text div aside #text2{
+                font-family: Hoss Round;
+                font-size: 16px;
+                font-weight: lighter;
+                color: #464646;
+                background: none;
+                margin-left:40px ;
+                width: 100%;
+                line-height: 30px;
+                
+            }
+            
+    
+            #fonctionnement .f3 #choice_text h1{
+                font-family: Hoss Round;
+                font-size: 181px;
+                font-weight: medium;
+                margin-left: 30px;
+                color: #5ABCA9;  
+            }
+    
+            #fonctionnement .f3 #choice_picture{
+                width: 50%;
+                height: 60vh;
+                background-color: none;
+                float: left;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+            }
+    
+            #fonctionnement .f3 #choice_picture img{
+                max-width: 70%;
+                margin: 0 auto;
+               
+            }
+       
+
+body #whyapp {
+    width: 100%;
+    height: 120vh;
+    background: url(../img/trace.png);
+    border: 1px solid red;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background: cover; 
+}
+
+#traitwhyapp{
+    padding-right: 420px;
+}
+
+
+#whyapp h4 {
+    font-family: Omnes;
+    font-size: 42px;
+    padding-top: 50px;
+    
+    color: #F0143E;
+    text-align: center; 
+}
+
+#whyapp #app {
+    width: 35%;
+    height: 40vh;
+    background: none;
+    float: left;
+    margin-top: 140px; 
+}
+
+#whyapp #app2 {
+    width: 30%;
+    height: 40vh;
+    background: none;
+    float: left;
+    margin-top: 140px; 
+}
+
+#whyapp #app3 {
+    width: 35%;
+    height: 40vh;
+    background: none;
+    float: left;
+    margin-top: 140px; 
+}
+
+/*app*/
+
+#whyapp #app article img {
+    width: 10%;
+   
+}
+
+#whyapp #app article:nth-child(1) {
+    width: 100%;
+    height: 30vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-left: 30px;
+}
+
+
+
+    
+#whyapp #app article:nth-child(1) div {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#whyapp #app article:nth-child(1) div span {
+    font-family: Hoss Round;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; 
+}
+
+#whyapp #app article:nth-child(1) div p {
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: normal;
+    color: white; 
+    
+
+}
+
+#whyapp #app article:nth-child(2) {
+    
+    height: 30vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-left: 30px;
+}
+
+#whyapp #app article:nth-child(2) div {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding-left: 20px;
+}
+
+#whyapp #app article:nth-child(2) div span {
+    font-family: Hoss Round;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; 
+}
+
+#whyapp #app article:nth-child(2) div p {
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white; 
+}
+
+
+/*app3*/
+
+#whyapp #app3 article img {
+    width: 10%;
+   
+}
+
+#whyapp #app3 article:nth-child(1) {
+    width: 100%;
+    height: 30vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    
+
+    
+}
+
+
+
+    
+#whyapp #app3 article:nth-child(1) div {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding-left: 20px;
+}
+
+#whyapp #app3 article:nth-child(1) div span {
+    font-family: Hoss Round;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; 
+}
+
+#whyapp #app3 article:nth-child(1) div p {
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: normal;
+    color: white; 
+   
+
+}
+
+#whyapp #app3 article:nth-child(2) {
+    width: 100%;
+    height: 30vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    
+}
+
+#whyapp #app3 article:nth-child(2) div {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding-left: 20px;
+}
+
+#whyapp #app3 article:nth-child(2) div span {
+    font-family: Hoss Round;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; 
+}
+
+#whyapp #app3 article:nth-child(2) div p {
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white; 
+   
+}
+
+body #challenge {
+    width: 90%;
+    height: 80vh;
+    background: none;
+    margin: 0 auto;
+}
+
+#trait_challenge{
+    margin-left: 60px;
+}
+
+#challenge h4 {
+    font-family: Omnes;
+    font-size: 42px;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #F0143E;
+    text-align: left; 
+}
+  #challenge #challenge1 {
+    width: 90%;
+    background: none;
+    margin: 0 auto; 
+}
+
+#challenge #challenge1 article:nth-child(1) {
+    width: 50%;
+    height: 200px;
+    background: none;
+    float: left; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+    
+#challenge #challenge1 article:nth-child(2) {
+    width: 50%;
+    height: 200px;
+    background: none;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#challenge #challenge1 img {
+    float: left;
+    width: 70%; 
+}
+
+#challenge #challenge1 p {
+    float: left;
+    font-family: Hoss Round;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 90%; 
+}
+
+#challenge #challenge2 {
+    width: 90%;
+    height: 50%;
+    background: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#challenge #challenge2 article:nth-child(1) {
+    width: 50%;
+    height: 200px;
+    background: none;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#challenge #challenge2 article:nth-child(2) {
+    width: 50%;
+    height: 200px;
+    background: none;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#challenge #challenge2 img {
+    float: left;
+    width: 90%; 
+}
+
+#challenge #challenge2 p {
+    float: left;
+    font-family: Hoss Round;
+    font-size: 17px;
+    font-weight: lighter;
+    width: 80%; 
+}
+  
+
+body #video {
+    width: 90%; 
+    background: lightskyblue;
+    margin: 0 auto;
+}
+
+#trait_video{
+    margin-left: 40px;
+}
+
+#video h4 {
+    font-family: Omnes;
+    font-size: 42px;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #F0143E;
+    text-align: left; 
+}
+
+#video video {
+    width: 100%; 
+}
+
+body #partenaires {
+    width: 90%;
+    height: 50vh;
+    background: none; 
+    margin: 0 auto;
+}
+
+#trait_partenaire{
+    margin-left: 40px;
+}
+
+#partenaires h4 {
+    font-family: Omnes;
+    font-size: 42px;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #F0143E;
+    text-align: left; 
+}
+
+#partenaires article {
+    margin: 0 auto;
+    height: 30vh;
+    width: 90%;
+    background: none;
+    display: flex;
+    justify-content: space-around; 
+}
+
+#partenaires article div {
+    width: calc(90%/3);
+    height: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#partenaires article div img:nth-child(1) {
+   width: 60%;
+}
+
+
+div#slider { 
+    width: 80%; 
+    max-width: 1000px; 
+
+} 
+
+
+
+
+
+
+body footer {
+    width: 100%;
+    height: 40vh;
+    background: url(../img/footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around; 
+}
+
+footer article h6{
+    font-family: Omnes;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+}
+footer article:nth-child(1) {
+    width: 50%;
+    height: 100px;
+    background: none;
+    margin-top: 30px; 
+}
+
+footer article:nth-child(1) h4 {
+    font-family: Omnes;
+    font-size: 40px;
+    color: white;
+    font-weight: bold; 
+}
+    
+footer article:nth-child(1) form {
+    width: 90%;
+    height: 30Px;
+    background: none;
+    display: flex;
+    justify-content: space-around; 
+}
+
+footer article:nth-child(1) form input:nth-child(1) {
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    float: left; 
+    padding-left: 20px;
+}
+
+      
+footer article:nth-child(1) form input:nth-child(2) {
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    float: left;
+    padding-left: 20px; 
+}
+
+footer article:nth-child(1) form button {
+    width: 160px;
+    height: 30px;
+    background: #F0143E;
+    font-family: Hoss Round;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+footer article:nth-child(1) div {
+    width: 40%;
+    background: lightpink; 
+}
+
+footer article:nth-child(1) div img:nth-child(1) {
+    max-width: 21%;
+    float: left; 
+}
+
+footer article:nth-child(1) div img:nth-child(2) {
+    max-width: 21%;
+    float: left; 
+    margin-bottom: 30px;
+}
+
+footer article:nth-child(1) div img:nth-child(3) {
+    max-width: 20%;
+    float: left; 
+}
+
+footer article:nth-child(1) div img:nth-child(4) {
+    max-width: 20%;
+    float: left; 
+}
+
+
+
+footer article:nth-child(2) {
+    width: 20%;
+    height: 100px;
+    background: none;
+    margin-top: 30px; 
+}
+    
+footer article:nth-child(2) ul {
+    display: block;
+    margin-top: 23px; 
+}
+
+footer article:nth-child(2) ul li a {
+    font-family: Omnes;
+    font-size: 31px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    list-style: none; 
+    text-decoration: none;
+}
+
+footer article:nth-child(2) ul li a:hover {
+    font-family: Omnes;
+    font-size: 31px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    list-style: none; 
+    text-decoration: underline;
+}
+
+/*L equipe */
+body #funequipe {
+    width: 100%;
+    height: 80vh;
+    background: url(../img/funequipe_fond.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid #5ABCA9; }
+
+  body #team {
+    width: 100%;
+    height: 100vh;
+    background: none; }
+
+body #steps {
+    width: 100%;
+    height: 70vh;
+    background: #5ABCA9; 
+}
+
+body #informations {
+    width: 100%;
+    height: 50vh;
+    background: url(../img/rectvert.png);
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

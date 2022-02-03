@@ -1,0 +1,145 @@
+#steps h4 {
+    font-family: Hoss Round;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center; }
+  #steps div {
+    width: 80%;
+    background: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px; }
+    #steps div article {
+      width: 21%;
+      height: 33vh;
+      background: white;
+      border-radius: 50%; }
+    #steps div article:nth-child(1) {
+      width: 21%;
+      height: 33vh;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      #steps div article:nth-child(1) img {
+        position: relative;
+        bottom: 70px;
+        left: 10px; }
+      #steps div article:nth-child(1) p {
+        text-align: center;
+        position: relative;
+        bottom: 40px;
+        font-family: Hoss Round; }
+      #steps div article:nth-child(1) h6 {
+        color: #F0143E;
+        font-family: Hoss Round;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        bottom: 10px; }
+    #steps div article:nth-child(2) {
+      width: 21%;
+      height: 33vh;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      #steps div article:nth-child(2) img {
+        position: relative;
+        bottom: 70px; }
+      #steps div article:nth-child(2) p {
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        font-family: Hoss Round; }
+      #steps div article:nth-child(2) h6 {
+        color: #F0143E;
+        font-family: Hoss Round;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        bottom: 20px; }
+    #steps div article:nth-child(3) {
+      width: 21%;
+      height: 33vh;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      #steps div article:nth-child(3) img {
+        position: relative;
+        bottom: 70px; }
+      #steps div article:nth-child(3) p {
+        text-align: center;
+        position: relative;
+        bottom: 70px;
+        font-family: Hoss Round; }
+      #steps div article:nth-child(3) h6 {
+        color: #F0143E;
+        font-family: Hoss Round;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        bottom: 20px; }
+
+ #informations h4 {
+    font-family: Hoss Round;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center; 
+}
+#informations article {
+margin: 0 auto;
+height: 80vh;
+width: 40%;
+background: white;
+display: flex;
+align-items: center;
+box-shadow: -1px 2px 5px 1px rgba(94, 94, 94, 0.7);
+border-radius: 20px; }
+#informations article form {
+    height: 95%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background: none; }
+    #informations article form h6 {
+        font-family: Hoss Round;
+        font-weight: lighter;
+        font-size: 20px;
+        color: #5ABCA9;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+    #informations article form label {
+        font-family: Hoss Round;
+        font-size: 20px;
+        width: 100%;
+        float: left;
+        margin-bottom: 10px; }
+    #informations article form input {
+        height: 40px;
+        width: 100%;
+        float: left;
+        margin-bottom: 30px;
+        box-shadow: -1px 2px 5px 1px rgba(94, 94, 94, 0.7);
+        border: none;
+        border-radius: 10px; }
+    #informations article form button {
+        float: left;
+        width: 200px;
+        height: 50px;
+        background: #F0143E;
+        font-family: Hoss Round;
+        text-decoration: none;
+        border-radius: 30px;
+        box-shadow: none;
+        border: none; }
